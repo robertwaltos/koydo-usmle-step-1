@@ -1,0 +1,45 @@
+// USMLE Step 1 Configuration
+// Generated from top_200_exam_universe_seed.csv
+
+export const EXAM_CONFIG = {
+  examId: "EXAM133",
+  slug: "usmle-step-1",
+  name: "USMLE Step 1",
+  fullName: "USMLE Step 1",
+  alias: "USMLE Step 1",
+  family: "USMLE",
+  category: "Professional licensure",
+  subcategory: "Medical licensure",
+  country: "Global/US",
+  region: "Global",
+  languages: ["English"],
+  estimatedAnnualTakers: "high",
+  testingWindow: "Year-round",
+  schedulePattern: "Continuous scheduling",
+  ageGroup: "22-35",
+  targetUser: "Medical student",
+  delivery: "Computer-based",
+  questionTypes: ["MCQ clinical/basic science"],
+  adaptivity: "Linear blocks",
+  sections: "7 blocks",
+  scoringMode: "Pass/fail",
+  essayOrSpeaking: "No",
+  ipRisk: "High",
+  contentReuse: "medical_licensure",
+  uiEngine: "longform_passage_objective",
+  monetizationPotential: "High",
+  tier: "Tier 3",
+  launchWave: "Wave 5",
+  themeColor: "#DC2626",
+  themeColorDark: "#B91C1C",
+  localizationComplexity: "Low",
+  offlineNeeded: false,
+  mobileFirst: false,
+  locale: "en",
+  isRTL: false,
+  freemiumGate: {
+    dailyQuestions: 10,
+  },
+} as const;
+
+export type ExamConfig = typeof EXAM_CONFIG;
