@@ -1,4 +1,4 @@
-// Auto-generated content manifest for Usmle Step 1
+// Auto-generated content manifest for USMLE Step 1
 // Question targets are 2-3x competition floor
 
 export type ActivityType =
@@ -20,8 +20,8 @@ export interface TopicManifest {
   title: string;
   icon: string;
   color: string;
-  questionTarget: number;
-  activityTypes: ActivityType[];
+  minQuestionCount: number;
+  requiredActivityTypes: ActivityType[];
 }
 
 export interface ContentManifest {
@@ -34,36 +34,54 @@ export interface ContentManifest {
 
 export const CONTENT_MANIFEST: ContentManifest = {
   examId: "usmle-step-1",
-  examName: "Usmle Step 1",
-  totalQuestions: 2300,
-  category: "admissions",
+  examName: "USMLE Step 1",
+  totalQuestions: 3000,
+  category: "professional",
   topics: [
-  {
-    id: "verbal",
-    domain: "verbal",
-    title: "Verbal",
-    icon: "📖",
-    color: "#1E40AF",
-    questionTarget: 900,
-    activityTypes: ["multiple_choice", "reading_passage", "cloze_deletion"],
-  },
-  {
-    id: "quantitative",
-    domain: "quantitative",
-    title: "Quantitative",
-    icon: "🔢",
-    color: "#7C3AED",
-    questionTarget: 900,
-    activityTypes: ["multiple_choice", "numeric_input", "whiteboard"],
-  },
-  {
-    id: "writing",
-    domain: "writing",
-    title: "Writing",
-    icon: "✍️",
-    color: "#D97706",
-    questionTarget: 500,
-    activityTypes: ["essay"],
-  }
+    {
+  id: "foundational-sciences",
+  domain: "foundational-sciences",
+  title: "Foundational Sciences",
+  icon: "🧪",
+  color: "#1E40AF",
+  minQuestionCount: 650,
+  requiredActivityTypes: ["multiple_choice", "reading_passage"],
+},
+{
+  id: "pathology-pharmacology",
+  domain: "pathology-pharmacology",
+  title: "Pathology & Pharmacology",
+  icon: "💊",
+  color: "#DC2626",
+  minQuestionCount: 700,
+  requiredActivityTypes: ["multiple_choice", "case_study"],
+},
+{
+  id: "microbiology-immunology",
+  domain: "microbiology-immunology",
+  title: "Microbiology & Immunology",
+  icon: "🦠",
+  color: "#059669",
+  minQuestionCount: 550,
+  requiredActivityTypes: ["multiple_choice", "diagram_label"],
+},
+{
+  id: "organ-systems",
+  domain: "organ-systems",
+  title: "Organ Systems",
+  icon: "🫀",
+  color: "#7C3AED",
+  minQuestionCount: 700,
+  requiredActivityTypes: ["multiple_choice", "case_study"],
+},
+{
+  id: "behavioral-science",
+  domain: "behavioral-science",
+  title: "Behavioral Science",
+  icon: "🧠",
+  color: "#D97706",
+  minQuestionCount: 400,
+  requiredActivityTypes: ["multiple_choice", "reading_passage"],
+}
   ],
 };
